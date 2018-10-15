@@ -1,0 +1,112 @@
+[![CocoaPods](https://img.shields.io/cocoapods/v/QueueITLibrary.svg)](https://cocoapods.org/pods/QueueITLibrary)
+
+# QueueIT iOS WebUI SDK
+
+Library for integrating Queue-It into an iOS app:
+
+## Installation
+
+### Requirements
+From version 2.12.0 the QueueITEngine will switch on the installed version of iOS as the old UIWebView has been marked deprecated from iOS 12. If the iOS version is above version 10.0.0 the newer WKWebView will be used instead of UIWebView.
+
+Therefore the minimum iOS version is 8.3, where WKWebViews were introduced. In the same round we have removed the target limit for iPhone only, so the library can be used with iPads as well.
+
+### CocoaPods
+
+[CocoaPods](http://cocoapods.org) is a dependency manager for Cocoa projects. You can install it with the following command:
+
+```bash
+$ gem install cocoapods
+```
+
+To integrate the SDK into your Xcode project using CocoaPods, specify it in your `Podfile`:
+
+```ruby
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.3'
+use_frameworks!
+
+target '<Your Target Name>' do
+    pod 'QueueITLibrary', '~> 2.12.0'
+end
+```
+
+Then, run the following command:
+
+```bash
+$ pod install
+```
+
+## Usage
+
+In this example we have a `UITableViewController` that we want to protect using Queue-it. The header file of `UIViewController` has following signature:
+
+```objc
+#import <UIKit/UIKit.h>
+#import "QueueITEngine.h"
+
+@interface TopsTableViewController : UITableViewController<QueuePassedDelegate, QueueViewWillOpenDelegate, QueueDisabledDelegate, QueueITUnavailableDelegate>
+-(void)initAndRunQueueIt;
+@end
+```
+
+The QueueITEngine class will open a web view to display the queue found from parameters provided.
+
+The implementation of the example controller looks like follows:
+
+```objc
+-(void)initAndRunQueueIt
+{
+    NSString* customerId = @"yourCustomerId"; // Required
+    NSString* eventOrAliasId = @"yourEventId"; // Required
+    NSString* layoutName = @"yourLayoutName"; // Optional (pass nil if no layout specified)
+    NSString* language = @"en-US"; // Optional (pass nil if no language specified)
+    
+    self.engine = [[QueueITEngine alloc]initWithHost:self customerId:customerId eventOrAliasId:eventOrAliasId layoutName:layoutName language:language];
+    [self.engine setViewDelay:5]; // Optional delay parameter you can specify (in case you want to inject some animation before Queue-It UIWebView or WKWebView will appear
+    self.engine.queuePassedDelegate = self; // Invoked once the user is passed the queue
+    self.engine.queueViewWillOpenDelegate = self; // Invoked to notify that Queue-It UIWebView or WKWebview will open
+    self.engine.queueDisabledDelegate = self; // Invoked to notify that queue is disabled
+    self.engine.queueITUnavailableDelegate = self; // Invoked in case QueueIT is unavailable (500 errors)
+    self.engine.queueUserExitedDelegate = self; // Invoked when user chooses to leave the queue
+    
+    @try
+    {
+        [self.engine run];
+    }
+    @catch (NSException *exception)
+    {
+        if ([exception reason] == [self.engine errorTypeEnumToString:NetworkUnavailable]) {
+            // Thrown when Queue-It detects no internet connectivity
+        } else if ([exception reason] == [self.engine errorTypeEnumToString:RequestAlreadyInProgress]) {
+            // Thrown when request to Queue-It has already been made and currently in progress. In general you can ignore this.
+        }
+    }
+}
+
+-(void) notifyYourTurn: (QueuePassedInfo*) queuePassedInfo { 
+    // Callback for engine.queuePassedDelegate
+    NSLog(@"You have been through the queue");
+    NSLog(@"QUEUE TOKEN: %@", queuePassedInfo.queueitToken);
+}
+
+-(void) notifyQueueViewWillOpen { 
+    // Callback for engine.queueViewWillOpenDelegate
+    NSLog(@"Queue will open");
+}
+
+-(void) notifyQueueDisabled { 
+    // Callback for engine.queueDisabledDelegate
+    NSLog(@"Queue is disabled");
+}
+
+-(void) notifyQueueITUnavailable: (NSString*) errorMessage { 
+    // Callback for engine.queueITUnavailableDelegate
+    NSLog(@"QueueIT is currently unavailable");
+}
+
+-(void) notifyUserExited {
+    // Callback for engine.queueUserExitedDelegate 
+    NSLog(@"User has left the queue");
+}
+```

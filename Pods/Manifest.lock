@@ -1,0 +1,16 @@
+PODS:
+  - QueueITLibrary (2.12.0)
+
+DEPENDENCIES:
+  - QueueITLibrary
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - QueueITLibrary
+
+SPEC CHECKSUMS:
+  QueueITLibrary: b32d6761e60ff432eec5ba0c748015d699d4885f
+
+PODFILE CHECKSUM: d74805f68d7d195b9a911f247988ebef98a5a68b
+
+COCOAPODS: 1.5.3
