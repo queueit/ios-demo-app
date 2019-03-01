@@ -3,28 +3,29 @@
 #import "DetailsViewController.h"
 
 @interface CupCakesTableViewController ()
-@property (nonatomic, strong) NSMutableArray *products;
+@property (nonatomic) NSMutableArray *products;
 @end
 
 @implementation CupCakesTableViewController
 
+static NSString * const data[] = {[0] = @"Cake Pan", [1] = @"Kitchen Timer", [2] = @"Paper Baking Cups", [3] = @"Frosting"};
+static NSString * const imagesData[] = {[0] = @"1.jpeg", [1] = @"2.jpeg", [2] = @"3.jpeg", [3] = @"4.jpeg"};
+static float const prices[] = {[0] = 10.99f, [1] = 4.99f, [2] = 0.99f, [3] = 3.99f};
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    NSArray *data = @[@"Cake Pan", @"Kitchen Timer", @"Paper Baking Cups", @"Frosting"];
-    NSArray *imagesData = @[@"1.jpeg", @"2.jpeg", @"3.jpeg", @"4.jpeg"];
-    NSArray *prices = @[@10.99f, @4.99f, @0.99f, @3.99f];
     
     self.products = [[NSMutableArray alloc]init];
     
     NSString* desc = @"For very yummy cup cakes";
-    for (int i = 0; i < data.count; i++)
+    for (int i = 0; i < 4; i++)
     {
         Product* item = [[Product alloc]instance:
-                         [imagesData objectAtIndex:i]
-                         title:[data objectAtIndex:i]
+                         imagesData[i]
+                         title:data[i]
                          productDescription:desc
-                         price:[[prices objectAtIndex:i]floatValue]];
+                         price:prices[i]];
         [self.products addObject:item];
     }
     
