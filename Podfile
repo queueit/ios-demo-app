@@ -1,4 +1,4 @@
-platform :ios, '8.3'
+platform :ios, '11.4'
 target "PodApp" do 
 	pod "QueueITLibrary"
 end
