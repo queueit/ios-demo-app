@@ -7,89 +7,84 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		051E00940BE745BAD3FE70BDCEF3F817 /* IOSUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 480CF60688AECCBBBE8D3F9D344B4594 /* IOSUtils.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		09478B67513BB2BCD1C06AFAAAB1A462 /* QueueService_NSURLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA1933C16969E427A5D60D97E250DB7 /* QueueService_NSURLConnection.m */; };
-		0E74902912EFE848CB1F62BC5F436130 /* QueuePassedInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E47CCE86134C8DC7C3FFE4AAA7BE0EDE /* QueuePassedInfo.m */; };
-		115DFAEF1612607D4AE1DF4E7FF71AF6 /* QueuePassedInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 57A2012B1872B2EF02B6204F074102AE /* QueuePassedInfo.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		3043AA75E52689BEB6DC7430D5DF053A /* QueueCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D31839C37FAE6632AF42DC6CC7A293A2 /* QueueCache.m */; };
-		34BB26E3C8DFA054E249526E36BF565B /* QueueService_NSURLConnectionRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8F666E359DA0C90CAB4170E4B39FCC /* QueueService_NSURLConnectionRequest.m */; };
-		43547E0410461B509CC0691F3903B2C4 /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A985EB8C193E5B744B7C69A9820551A /* Reachability.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		447836EE84F0CA33B3075869080D664D /* QueueITViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C16FBF46DF4A91E7E5B615E24135DC4 /* QueueITViewController.m */; };
-		483B79EBB3D1C281F8F0283A4FE9AEBC /* QueueService.h in Headers */ = {isa = PBXBuildFile; fileRef = 74D18FB6253F0EF54742C06CCFE29880 /* QueueService.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		55D047F7A7C0906BAE827C6F3745C75E /* QueueITWKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6903585B55CABE505D2F0F59915BC7C /* QueueITWKViewController.m */; };
-		60311B016D6CD3698984CC375AF2DB2E /* QueueITWKViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 49BE831B7D365072A4164F8A8F5FC39A /* QueueITWKViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		8C12A20CA141E292112543676861CB4D /* QueueITViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F8D5DB3F88BE684AC8C3FFF85DE165CF /* QueueITViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		9113963CEF015CDC8E90953A8941E552 /* QueueService_NSURLConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = F8B814F90AAF27DC9E7082AC1523A1C5 /* QueueService_NSURLConnection.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		99952490FAD625B97AE26F4133AC58B5 /* QueueITEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A275FBD08E1099A5674FBB81A4719D2 /* QueueITEngine.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		AB17B9EB74050B5448817E664C776761 /* QueueITEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AC8FC3074E03D424B08033285FBD861 /* QueueITEngine.m */; };
-		B444A13C50AF6E77E5D7B28D3156D21A /* QueueService_NSURLConnectionRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EB2E618173ADF3F72F6E6C0B9F218EE /* QueueService_NSURLConnectionRequest.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		D8E650C3DC039850101FDDA8D1596331 /* QueueService.m in Sources */ = {isa = PBXBuildFile; fileRef = FDF230FBDD98CB06C42FE5DE4AD8EC67 /* QueueService.m */; };
-		DACE06206299BC7A141A8E62C71164EA /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 78254CA519109FCEE0D78AD51F9845A4 /* Reachability.m */; };
-		E147E343586408602DBFD784463B71BF /* QueueCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 069C2E55A291AE2C6453B2842897CAB3 /* QueueCache.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		E15FFCD03742DFA2D2AB1A3916A2C03D /* QueueStatus.h in Headers */ = {isa = PBXBuildFile; fileRef = 49104DAC5EA2FE2195F85ACE1A26CC5D /* QueueStatus.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		E8354B0AF60162C2881A6D7B01E04627 /* QueueITLibrary-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F53197DEB084B7FA6E74CDABD06F90CF /* QueueITLibrary-dummy.m */; };
-		F2A62B7D18234CBB99EB07400BAC14EE /* QueueStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F27EE8124CCB13BB673554608A73DC /* QueueStatus.m */; };
-		F8D495B20CE00DF32B8F1413DC1F8C0A /* IOSUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = A314D8E86E7137551B2DF1C914B20F4D /* IOSUtils.m */; };
-		F90658DE935725658D7477564AE421F5 /* Pods-PodApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 32A0D8B901830CD34915E850B7697F7E /* Pods-PodApp-dummy.m */; };
+		0AADBF4ED28EC236E5622D81B1B42C01 /* Pods-PodApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A56D3E3CE100C1B81F3C075E06757648 /* Pods-PodApp-dummy.m */; };
+		1C6E8B3E8F62D314C61B9639BD9BB4A7 /* QueueService_NSURLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 1453E5964E93E22C3C33CC932FC3DE7B /* QueueService_NSURLConnection.m */; };
+		2164E6596BCC4D0AA1A8B8F589665A94 /* QueueService_NSURLConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = A1378F90B3A1FE0FE50AA08DD9CC1AB5 /* QueueService_NSURLConnection.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2568EE40D36EEA60FD4F5F8217787384 /* IOSUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 38468F81A4DAA7146E6CAA349B1F1707 /* IOSUtils.m */; };
+		258CC7980AB57C5D98F6C94219A3E805 /* QueuePassedInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = A50B2276691BAA82803F83CB1E0CA48D /* QueuePassedInfo.m */; };
+		26B6D93C03DA128A7639D081BA09775E /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = E03FEDEB161F003642161C7AFB90E32B /* Reachability.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		37F59894B772C981397D064475C5A183 /* QueuePassedInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = AD2518DC23D372E726C8438C5681BD4F /* QueuePassedInfo.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3C86C0A4A543BE87218E112AD108BF1D /* QueueITEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 36B2BE6573B9673C92A063AC9D44E7CE /* QueueITEngine.m */; };
+		3DEA12D96730EF436FF576B1C002B682 /* QueueITWKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 737A4A0A396FA6570C11946CD89FBB32 /* QueueITWKViewController.m */; };
+		3E61D50EAA2498F392D38F51A91E6D59 /* QueueStatus.h in Headers */ = {isa = PBXBuildFile; fileRef = 26B0AEFE02138CDCF38C493FB8320770 /* QueueStatus.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4E4DB1D974E53FEA5E178CD6358EE8D2 /* IOSUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = C3A19975DF215A86BDC3E95A4DDFBCB7 /* IOSUtils.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		70AAAB3E4111B61558F3E2E344949C92 /* QueueStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 19702175602E9E9237F33DF4332AD754 /* QueueStatus.m */; };
+		8504F2099FA453EC7FC69A5B79D3045C /* QueueService.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF7BA200E7567C153B4E61284A214AB /* QueueService.m */; };
+		90BD52C8F0D96EA26E7CF8831AF2B0AF /* QueueCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 8021F56F6F05D31F08D848A75EF5BCB4 /* QueueCache.m */; };
+		922737C04C6A36D83250C6556D87F6AB /* QueueService_NSURLConnectionRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 983419EA3B0C771DC5FF72EA1ED77005 /* QueueService_NSURLConnectionRequest.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		964BF53152AB968D236F6414722A5311 /* QueueService.h in Headers */ = {isa = PBXBuildFile; fileRef = 61A8A2D70AC717061FD7E2860962B5FA /* QueueService.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C9AA825DC1D372DC60C6BD5E0BCD58EA /* QueueService_NSURLConnectionRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 94472DCEDD8C1EEEEAFB22D28819BF96 /* QueueService_NSURLConnectionRequest.m */; };
+		CBB6AF9FF7D9AC146332131BB66E6B39 /* QueueITWKViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = CAAC20A7AB718E6037290C5C15708B14 /* QueueITWKViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D25B383D2CC39925A41087CB79B19496 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C847B97FD66FA2B4E5A29D3B10B549C /* Reachability.m */; };
+		D703E4C8FFE4FA96A62884E841154CAB /* QueueITLibrary-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFDF74DB29010FBF7F1B7FD35256961 /* QueueITLibrary-dummy.m */; };
+		E9A5E6868740681A72ECE1CF2F7BDD9C /* QueueCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 31E08269EB970A43D82C6F577E551AF0 /* QueueCache.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EE1A3A9BFECAF9EFCF0D4BC3F4000A2D /* QueueITEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E78D12B714F9B600B84EDABD2223FFB /* QueueITEngine.h */; settings = {ATTRIBUTES = (Project, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C26E89A4FE31F152CB465C42EE8079B5 /* PBXContainerItemProxy */ = {
+		EA698DF4F383B40596D67C418741CF77 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = BA54221EABB490F4642054127AEEB709;
+			remoteGlobalIDString = DBC71AB538C0ACFDE56A1131EA495025;
 			remoteInfo = QueueITLibrary;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		069C2E55A291AE2C6453B2842897CAB3 /* QueueCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QueueCache.h; path = QueueITLib/QueueCache.h; sourceTree = "<group>"; };
-		0FC29313DB19115AA3D2D1419256E89D /* QueueITLibrary-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QueueITLibrary-prefix.pch"; sourceTree = "<group>"; };
-		32A0D8B901830CD34915E850B7697F7E /* Pods-PodApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PodApp-dummy.m"; sourceTree = "<group>"; };
-		3D8F666E359DA0C90CAB4170E4B39FCC /* QueueService_NSURLConnectionRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QueueService_NSURLConnectionRequest.m; path = QueueITLib/QueueService_NSURLConnectionRequest.m; sourceTree = "<group>"; };
-		3EB2E618173ADF3F72F6E6C0B9F218EE /* QueueService_NSURLConnectionRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QueueService_NSURLConnectionRequest.h; path = QueueITLib/QueueService_NSURLConnectionRequest.h; sourceTree = "<group>"; };
-		480CF60688AECCBBBE8D3F9D344B4594 /* IOSUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IOSUtils.h; path = QueueITLib/IOSUtils.h; sourceTree = "<group>"; };
-		49104DAC5EA2FE2195F85ACE1A26CC5D /* QueueStatus.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QueueStatus.h; path = QueueITLib/QueueStatus.h; sourceTree = "<group>"; };
-		49BE831B7D365072A4164F8A8F5FC39A /* QueueITWKViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QueueITWKViewController.h; path = QueueITLib/QueueITWKViewController.h; sourceTree = "<group>"; };
-		4A275FBD08E1099A5674FBB81A4719D2 /* QueueITEngine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QueueITEngine.h; path = QueueITLib/QueueITEngine.h; sourceTree = "<group>"; };
-		4A80B0BE34F4B8BB5442D661144D51F1 /* Pods-PodApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PodApp.debug.xcconfig"; sourceTree = "<group>"; };
-		4AC1AFF4A832E5DCE0E574A9100825FD /* Pods-PodApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PodApp.release.xcconfig"; sourceTree = "<group>"; };
-		51442B4F8531F5F11334948771877722 /* QueueITLibrary.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = QueueITLibrary.xcconfig; sourceTree = "<group>"; };
-		57A2012B1872B2EF02B6204F074102AE /* QueuePassedInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QueuePassedInfo.h; path = QueueITLib/QueuePassedInfo.h; sourceTree = "<group>"; };
-		5ABC1DCF423C87C5E88A36753B211F9E /* Pods-PodApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PodApp-frameworks.sh"; sourceTree = "<group>"; };
-		5AC8FC3074E03D424B08033285FBD861 /* QueueITEngine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QueueITEngine.m; path = QueueITLib/QueueITEngine.m; sourceTree = "<group>"; };
-		69F27EE8124CCB13BB673554608A73DC /* QueueStatus.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QueueStatus.m; path = QueueITLib/QueueStatus.m; sourceTree = "<group>"; };
-		6A985EB8C193E5B744B7C69A9820551A /* Reachability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = QueueITLib/Reachability.h; sourceTree = "<group>"; };
-		6C16FBF46DF4A91E7E5B615E24135DC4 /* QueueITViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QueueITViewController.m; path = QueueITLib/QueueITViewController.m; sourceTree = "<group>"; };
-		74D18FB6253F0EF54742C06CCFE29880 /* QueueService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QueueService.h; path = QueueITLib/QueueService.h; sourceTree = "<group>"; };
-		78254CA519109FCEE0D78AD51F9845A4 /* Reachability.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = QueueITLib/Reachability.m; sourceTree = "<group>"; };
-		7AFADCACD2596C5CDF4FEB52717934A0 /* libQueueITLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libQueueITLibrary.a; path = libQueueITLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		88B6FC1602AF27585C16EBD58E753CDF /* Pods-PodApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PodApp-resources.sh"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9CA1933C16969E427A5D60D97E250DB7 /* QueueService_NSURLConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QueueService_NSURLConnection.m; path = QueueITLib/QueueService_NSURLConnection.m; sourceTree = "<group>"; };
-		A314D8E86E7137551B2DF1C914B20F4D /* IOSUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IOSUtils.m; path = QueueITLib/IOSUtils.m; sourceTree = "<group>"; };
-		B6903585B55CABE505D2F0F59915BC7C /* QueueITWKViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QueueITWKViewController.m; path = QueueITLib/QueueITWKViewController.m; sourceTree = "<group>"; };
-		C49515C490E61585C28DD6EFC2197C78 /* libPods-PodApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-PodApp.a"; path = "libPods-PodApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C8DA94E88B9333441BD434CCA7B97D24 /* Pods-PodApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PodApp-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D31839C37FAE6632AF42DC6CC7A293A2 /* QueueCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QueueCache.m; path = QueueITLib/QueueCache.m; sourceTree = "<group>"; };
-		E47CCE86134C8DC7C3FFE4AAA7BE0EDE /* QueuePassedInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QueuePassedInfo.m; path = QueueITLib/QueuePassedInfo.m; sourceTree = "<group>"; };
-		E97B2350B300AC87EF3E560F4CB26F21 /* Pods-PodApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PodApp-acknowledgements.plist"; sourceTree = "<group>"; };
-		F53197DEB084B7FA6E74CDABD06F90CF /* QueueITLibrary-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "QueueITLibrary-dummy.m"; sourceTree = "<group>"; };
-		F8B814F90AAF27DC9E7082AC1523A1C5 /* QueueService_NSURLConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QueueService_NSURLConnection.h; path = QueueITLib/QueueService_NSURLConnection.h; sourceTree = "<group>"; };
-		F8D5DB3F88BE684AC8C3FFF85DE165CF /* QueueITViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QueueITViewController.h; path = QueueITLib/QueueITViewController.h; sourceTree = "<group>"; };
-		FDF230FBDD98CB06C42FE5DE4AD8EC67 /* QueueService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QueueService.m; path = QueueITLib/QueueService.m; sourceTree = "<group>"; };
+		0C847B97FD66FA2B4E5A29D3B10B549C /* Reachability.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = QueueITLib/Reachability.m; sourceTree = "<group>"; };
+		0E78D12B714F9B600B84EDABD2223FFB /* QueueITEngine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QueueITEngine.h; path = QueueITLib/QueueITEngine.h; sourceTree = "<group>"; };
+		1453E5964E93E22C3C33CC932FC3DE7B /* QueueService_NSURLConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QueueService_NSURLConnection.m; path = QueueITLib/QueueService_NSURLConnection.m; sourceTree = "<group>"; };
+		19702175602E9E9237F33DF4332AD754 /* QueueStatus.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QueueStatus.m; path = QueueITLib/QueueStatus.m; sourceTree = "<group>"; };
+		1EF7BA200E7567C153B4E61284A214AB /* QueueService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QueueService.m; path = QueueITLib/QueueService.m; sourceTree = "<group>"; };
+		2404B0EDD35EF624C6828BF7C96A812B /* Pods-PodApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PodApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		26B0AEFE02138CDCF38C493FB8320770 /* QueueStatus.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QueueStatus.h; path = QueueITLib/QueueStatus.h; sourceTree = "<group>"; };
+		31E08269EB970A43D82C6F577E551AF0 /* QueueCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QueueCache.h; path = QueueITLib/QueueCache.h; sourceTree = "<group>"; };
+		36B2BE6573B9673C92A063AC9D44E7CE /* QueueITEngine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QueueITEngine.m; path = QueueITLib/QueueITEngine.m; sourceTree = "<group>"; };
+		38468F81A4DAA7146E6CAA349B1F1707 /* IOSUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IOSUtils.m; path = QueueITLib/IOSUtils.m; sourceTree = "<group>"; };
+		389A2354638C08A8442D2AE385D4BEE3 /* libPods-PodApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-PodApp.a"; path = "libPods-PodApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		43952F5D6D65B9DADD3B0CAB3CEC2952 /* libQueueITLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libQueueITLibrary.a; path = libQueueITLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		617A81B1F129CF47F16C2FFD962F969B /* QueueITLibrary-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QueueITLibrary-prefix.pch"; sourceTree = "<group>"; };
+		61A8A2D70AC717061FD7E2860962B5FA /* QueueService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QueueService.h; path = QueueITLib/QueueService.h; sourceTree = "<group>"; };
+		737A4A0A396FA6570C11946CD89FBB32 /* QueueITWKViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QueueITWKViewController.m; path = QueueITLib/QueueITWKViewController.m; sourceTree = "<group>"; };
+		8021F56F6F05D31F08D848A75EF5BCB4 /* QueueCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QueueCache.m; path = QueueITLib/QueueCache.m; sourceTree = "<group>"; };
+		85804140EA2C925C89C3E5259E4A48F7 /* Pods-PodApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PodApp.debug.xcconfig"; sourceTree = "<group>"; };
+		94472DCEDD8C1EEEEAFB22D28819BF96 /* QueueService_NSURLConnectionRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QueueService_NSURLConnectionRequest.m; path = QueueITLib/QueueService_NSURLConnectionRequest.m; sourceTree = "<group>"; };
+		983419EA3B0C771DC5FF72EA1ED77005 /* QueueService_NSURLConnectionRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QueueService_NSURLConnectionRequest.h; path = QueueITLib/QueueService_NSURLConnectionRequest.h; sourceTree = "<group>"; };
+		9D4772031613BD151142A9E37874EA59 /* QueueITLibrary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = QueueITLibrary.release.xcconfig; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A1378F90B3A1FE0FE50AA08DD9CC1AB5 /* QueueService_NSURLConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QueueService_NSURLConnection.h; path = QueueITLib/QueueService_NSURLConnection.h; sourceTree = "<group>"; };
+		A50B2276691BAA82803F83CB1E0CA48D /* QueuePassedInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QueuePassedInfo.m; path = QueueITLib/QueuePassedInfo.m; sourceTree = "<group>"; };
+		A56D3E3CE100C1B81F3C075E06757648 /* Pods-PodApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PodApp-dummy.m"; sourceTree = "<group>"; };
+		AD2518DC23D372E726C8438C5681BD4F /* QueuePassedInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QueuePassedInfo.h; path = QueueITLib/QueuePassedInfo.h; sourceTree = "<group>"; };
+		BDFDF74DB29010FBF7F1B7FD35256961 /* QueueITLibrary-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "QueueITLibrary-dummy.m"; sourceTree = "<group>"; };
+		C0032D6B539A466AC36290A14A59F90E /* QueueITLibrary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = QueueITLibrary.debug.xcconfig; sourceTree = "<group>"; };
+		C3A19975DF215A86BDC3E95A4DDFBCB7 /* IOSUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IOSUtils.h; path = QueueITLib/IOSUtils.h; sourceTree = "<group>"; };
+		CAAC20A7AB718E6037290C5C15708B14 /* QueueITWKViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QueueITWKViewController.h; path = QueueITLib/QueueITWKViewController.h; sourceTree = "<group>"; };
+		E03FEDEB161F003642161C7AFB90E32B /* Reachability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = QueueITLib/Reachability.h; sourceTree = "<group>"; };
+		E939D35A14DCC0577F1BA4F4EACACB6E /* Pods-PodApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PodApp.release.xcconfig"; sourceTree = "<group>"; };
+		FAC33630067AA8E8BCB87170C66F2A3F /* Pods-PodApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PodApp-acknowledgements.markdown"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		AE824A918677138324BD2F6D95984219 /* Frameworks */ = {
+		6E5D2697CCBD1AF4103594BED27873FD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EFE52CCF1B3A4D32F6C12960B7426AE8 /* Frameworks */ = {
+		D66730C1A66366F580EB1767BCDEA201 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -99,162 +94,158 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */ = {
+		1512C13792C9884B2C01E54F36155B2D /* Pods-PodApp */ = {
+			isa = PBXGroup;
+			children = (
+				FAC33630067AA8E8BCB87170C66F2A3F /* Pods-PodApp-acknowledgements.markdown */,
+				2404B0EDD35EF624C6828BF7C96A812B /* Pods-PodApp-acknowledgements.plist */,
+				A56D3E3CE100C1B81F3C075E06757648 /* Pods-PodApp-dummy.m */,
+				85804140EA2C925C89C3E5259E4A48F7 /* Pods-PodApp.debug.xcconfig */,
+				E939D35A14DCC0577F1BA4F4EACACB6E /* Pods-PodApp.release.xcconfig */,
+			);
+			name = "Pods-PodApp";
+			path = "Target Support Files/Pods-PodApp";
+			sourceTree = "<group>";
+		};
+		1A1D7D88F392366A3566BEBA2581813A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8FD610136F0A2F47637B6A6DECC7B80B /* QueueITLibrary */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		756B4CC618C7EEFEA18060D406D77089 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BDFDF74DB29010FBF7F1B7FD35256961 /* QueueITLibrary-dummy.m */,
+				617A81B1F129CF47F16C2FFD962F969B /* QueueITLibrary-prefix.pch */,
+				C0032D6B539A466AC36290A14A59F90E /* QueueITLibrary.debug.xcconfig */,
+				9D4772031613BD151142A9E37874EA59 /* QueueITLibrary.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/QueueITLibrary";
+			sourceTree = "<group>";
+		};
+		8FD610136F0A2F47637B6A6DECC7B80B /* QueueITLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				C3A19975DF215A86BDC3E95A4DDFBCB7 /* IOSUtils.h */,
+				38468F81A4DAA7146E6CAA349B1F1707 /* IOSUtils.m */,
+				31E08269EB970A43D82C6F577E551AF0 /* QueueCache.h */,
+				8021F56F6F05D31F08D848A75EF5BCB4 /* QueueCache.m */,
+				0E78D12B714F9B600B84EDABD2223FFB /* QueueITEngine.h */,
+				36B2BE6573B9673C92A063AC9D44E7CE /* QueueITEngine.m */,
+				CAAC20A7AB718E6037290C5C15708B14 /* QueueITWKViewController.h */,
+				737A4A0A396FA6570C11946CD89FBB32 /* QueueITWKViewController.m */,
+				AD2518DC23D372E726C8438C5681BD4F /* QueuePassedInfo.h */,
+				A50B2276691BAA82803F83CB1E0CA48D /* QueuePassedInfo.m */,
+				61A8A2D70AC717061FD7E2860962B5FA /* QueueService.h */,
+				1EF7BA200E7567C153B4E61284A214AB /* QueueService.m */,
+				A1378F90B3A1FE0FE50AA08DD9CC1AB5 /* QueueService_NSURLConnection.h */,
+				1453E5964E93E22C3C33CC932FC3DE7B /* QueueService_NSURLConnection.m */,
+				983419EA3B0C771DC5FF72EA1ED77005 /* QueueService_NSURLConnectionRequest.h */,
+				94472DCEDD8C1EEEEAFB22D28819BF96 /* QueueService_NSURLConnectionRequest.m */,
+				26B0AEFE02138CDCF38C493FB8320770 /* QueueStatus.h */,
+				19702175602E9E9237F33DF4332AD754 /* QueueStatus.m */,
+				E03FEDEB161F003642161C7AFB90E32B /* Reachability.h */,
+				0C847B97FD66FA2B4E5A29D3B10B549C /* Reachability.m */,
+				756B4CC618C7EEFEA18060D406D77089 /* Support Files */,
+			);
+			name = QueueITLibrary;
+			path = QueueITLibrary;
+			sourceTree = "<group>";
+		};
+		969A6B3366F6E730A6A09162A0395D12 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				389A2354638C08A8442D2AE385D4BEE3 /* libPods-PodApp.a */,
+				43952F5D6D65B9DADD3B0CAB3CEC2952 /* libQueueITLibrary.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
+				1A1D7D88F392366A3566BEBA2581813A /* Pods */,
+				969A6B3366F6E730A6A09162A0395D12 /* Products */,
+				FCFA03DC2A3B4DB1ED0BD1F23E4A0065 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		1AFECB4A0F3E9B02835A5E6DD7CDB396 /* Pods-PodApp */ = {
+		FCFA03DC2A3B4DB1ED0BD1F23E4A0065 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				C8DA94E88B9333441BD434CCA7B97D24 /* Pods-PodApp-acknowledgements.markdown */,
-				E97B2350B300AC87EF3E560F4CB26F21 /* Pods-PodApp-acknowledgements.plist */,
-				32A0D8B901830CD34915E850B7697F7E /* Pods-PodApp-dummy.m */,
-				5ABC1DCF423C87C5E88A36753B211F9E /* Pods-PodApp-frameworks.sh */,
-				88B6FC1602AF27585C16EBD58E753CDF /* Pods-PodApp-resources.sh */,
-				4A80B0BE34F4B8BB5442D661144D51F1 /* Pods-PodApp.debug.xcconfig */,
-				4AC1AFF4A832E5DCE0E574A9100825FD /* Pods-PodApp.release.xcconfig */,
-			);
-			name = "Pods-PodApp";
-			path = "Target Support Files/Pods-PodApp";
-			sourceTree = "<group>";
-		};
-		4EE1AE7332E8F721F19E42F596C6C142 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				C49515C490E61585C28DD6EFC2197C78 /* libPods-PodApp.a */,
-				7AFADCACD2596C5CDF4FEB52717934A0 /* libQueueITLibrary.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		7DB346D0F39D3F0E887471402A8071AB = {
-			isa = PBXGroup;
-			children = (
-				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */,
-				A0F617E2B36F0855B2FB715BCBC294AE /* Pods */,
-				4EE1AE7332E8F721F19E42F596C6C142 /* Products */,
-				A072CAB7B9E881752287287312486913 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		9889727739AA3B2F16D8D1FA6E1BBE5F /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				51442B4F8531F5F11334948771877722 /* QueueITLibrary.xcconfig */,
-				F53197DEB084B7FA6E74CDABD06F90CF /* QueueITLibrary-dummy.m */,
-				0FC29313DB19115AA3D2D1419256E89D /* QueueITLibrary-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/QueueITLibrary";
-			sourceTree = "<group>";
-		};
-		A072CAB7B9E881752287287312486913 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				1AFECB4A0F3E9B02835A5E6DD7CDB396 /* Pods-PodApp */,
+				1512C13792C9884B2C01E54F36155B2D /* Pods-PodApp */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		A0F617E2B36F0855B2FB715BCBC294AE /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				E9A54130AEE55F20E517BDFEAE599B56 /* QueueITLibrary */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		E9A54130AEE55F20E517BDFEAE599B56 /* QueueITLibrary */ = {
-			isa = PBXGroup;
-			children = (
-				480CF60688AECCBBBE8D3F9D344B4594 /* IOSUtils.h */,
-				A314D8E86E7137551B2DF1C914B20F4D /* IOSUtils.m */,
-				069C2E55A291AE2C6453B2842897CAB3 /* QueueCache.h */,
-				D31839C37FAE6632AF42DC6CC7A293A2 /* QueueCache.m */,
-				4A275FBD08E1099A5674FBB81A4719D2 /* QueueITEngine.h */,
-				5AC8FC3074E03D424B08033285FBD861 /* QueueITEngine.m */,
-				F8D5DB3F88BE684AC8C3FFF85DE165CF /* QueueITViewController.h */,
-				6C16FBF46DF4A91E7E5B615E24135DC4 /* QueueITViewController.m */,
-				49BE831B7D365072A4164F8A8F5FC39A /* QueueITWKViewController.h */,
-				B6903585B55CABE505D2F0F59915BC7C /* QueueITWKViewController.m */,
-				57A2012B1872B2EF02B6204F074102AE /* QueuePassedInfo.h */,
-				E47CCE86134C8DC7C3FFE4AAA7BE0EDE /* QueuePassedInfo.m */,
-				74D18FB6253F0EF54742C06CCFE29880 /* QueueService.h */,
-				FDF230FBDD98CB06C42FE5DE4AD8EC67 /* QueueService.m */,
-				F8B814F90AAF27DC9E7082AC1523A1C5 /* QueueService_NSURLConnection.h */,
-				9CA1933C16969E427A5D60D97E250DB7 /* QueueService_NSURLConnection.m */,
-				3EB2E618173ADF3F72F6E6C0B9F218EE /* QueueService_NSURLConnectionRequest.h */,
-				3D8F666E359DA0C90CAB4170E4B39FCC /* QueueService_NSURLConnectionRequest.m */,
-				49104DAC5EA2FE2195F85ACE1A26CC5D /* QueueStatus.h */,
-				69F27EE8124CCB13BB673554608A73DC /* QueueStatus.m */,
-				6A985EB8C193E5B744B7C69A9820551A /* Reachability.h */,
-				78254CA519109FCEE0D78AD51F9845A4 /* Reachability.m */,
-				9889727739AA3B2F16D8D1FA6E1BBE5F /* Support Files */,
-			);
-			name = QueueITLibrary;
-			path = QueueITLibrary;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		549B6B14A429EC041B2FE3A4380EE3E1 /* Headers */ = {
+		1C8C9C58A48F216744847D2792AC30E4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				051E00940BE745BAD3FE70BDCEF3F817 /* IOSUtils.h in Headers */,
-				E147E343586408602DBFD784463B71BF /* QueueCache.h in Headers */,
-				99952490FAD625B97AE26F4133AC58B5 /* QueueITEngine.h in Headers */,
-				8C12A20CA141E292112543676861CB4D /* QueueITViewController.h in Headers */,
-				60311B016D6CD3698984CC375AF2DB2E /* QueueITWKViewController.h in Headers */,
-				115DFAEF1612607D4AE1DF4E7FF71AF6 /* QueuePassedInfo.h in Headers */,
-				483B79EBB3D1C281F8F0283A4FE9AEBC /* QueueService.h in Headers */,
-				9113963CEF015CDC8E90953A8941E552 /* QueueService_NSURLConnection.h in Headers */,
-				B444A13C50AF6E77E5D7B28D3156D21A /* QueueService_NSURLConnectionRequest.h in Headers */,
-				E15FFCD03742DFA2D2AB1A3916A2C03D /* QueueStatus.h in Headers */,
-				43547E0410461B509CC0691F3903B2C4 /* Reachability.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		77D899D4DC8490D630C90826921B1381 /* Headers */ = {
+		390169C81C0EFA1BACEE095D4A45C01E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E4DB1D974E53FEA5E178CD6358EE8D2 /* IOSUtils.h in Headers */,
+				E9A5E6868740681A72ECE1CF2F7BDD9C /* QueueCache.h in Headers */,
+				EE1A3A9BFECAF9EFCF0D4BC3F4000A2D /* QueueITEngine.h in Headers */,
+				CBB6AF9FF7D9AC146332131BB66E6B39 /* QueueITWKViewController.h in Headers */,
+				37F59894B772C981397D064475C5A183 /* QueuePassedInfo.h in Headers */,
+				964BF53152AB968D236F6414722A5311 /* QueueService.h in Headers */,
+				2164E6596BCC4D0AA1A8B8F589665A94 /* QueueService_NSURLConnection.h in Headers */,
+				922737C04C6A36D83250C6556D87F6AB /* QueueService_NSURLConnectionRequest.h in Headers */,
+				3E61D50EAA2498F392D38F51A91E6D59 /* QueueStatus.h in Headers */,
+				26B6D93C03DA128A7639D081BA09775E /* Reachability.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		B5A9EEEF6334441DDDA32B1AE6E99B31 /* Pods-PodApp */ = {
+		7CECD13768A3B55D1514EB2609EEAA49 /* Pods-PodApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6A025ACED16A8F8BD9253CA718A42E02 /* Build configuration list for PBXNativeTarget "Pods-PodApp" */;
+			buildConfigurationList = 9066833785467524C41DC41A3B7B5195 /* Build configuration list for PBXNativeTarget "Pods-PodApp" */;
 			buildPhases = (
-				77D899D4DC8490D630C90826921B1381 /* Headers */,
-				5B35F057EA1381B28B2D69930F76F425 /* Sources */,
-				EFE52CCF1B3A4D32F6C12960B7426AE8 /* Frameworks */,
+				1C8C9C58A48F216744847D2792AC30E4 /* Headers */,
+				2E005D70B92E7B7241A31CD79D4045CA /* Sources */,
+				D66730C1A66366F580EB1767BCDEA201 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				D2506F1005A40CFE6804D06DD8D6D979 /* PBXTargetDependency */,
+				C7B788D94D39FDED755A6B58D6E995CB /* PBXTargetDependency */,
 			);
 			name = "Pods-PodApp";
 			productName = "Pods-PodApp";
-			productReference = C49515C490E61585C28DD6EFC2197C78 /* libPods-PodApp.a */;
+			productReference = 389A2354638C08A8442D2AE385D4BEE3 /* libPods-PodApp.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		BA54221EABB490F4642054127AEEB709 /* QueueITLibrary */ = {
+		DBC71AB538C0ACFDE56A1131EA495025 /* QueueITLibrary */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8D38A450DE9E23C6B0925028AEC077C4 /* Build configuration list for PBXNativeTarget "QueueITLibrary" */;
+			buildConfigurationList = 73EB793AF5D8EC3E8C83B2250FEB8468 /* Build configuration list for PBXNativeTarget "QueueITLibrary" */;
 			buildPhases = (
-				549B6B14A429EC041B2FE3A4380EE3E1 /* Headers */,
-				3314F6AFEF45BD52327A9C32C2650621 /* Sources */,
-				AE824A918677138324BD2F6D95984219 /* Frameworks */,
+				390169C81C0EFA1BACEE095D4A45C01E /* Headers */,
+				BC34F5BA0745D3AC12F3AB96EEA22CDA /* Sources */,
+				6E5D2697CCBD1AF4103594BED27873FD /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -262,86 +253,139 @@
 			);
 			name = QueueITLibrary;
 			productName = QueueITLibrary;
-			productReference = 7AFADCACD2596C5CDF4FEB52717934A0 /* libQueueITLibrary.a */;
+			productReference = 43952F5D6D65B9DADD3B0CAB3CEC2952 /* libQueueITLibrary.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
 			};
-			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
-			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 4EE1AE7332E8F721F19E42F596C6C142 /* Products */;
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 969A6B3366F6E730A6A09162A0395D12 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B5A9EEEF6334441DDDA32B1AE6E99B31 /* Pods-PodApp */,
-				BA54221EABB490F4642054127AEEB709 /* QueueITLibrary */,
+				7CECD13768A3B55D1514EB2609EEAA49 /* Pods-PodApp */,
+				DBC71AB538C0ACFDE56A1131EA495025 /* QueueITLibrary */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3314F6AFEF45BD52327A9C32C2650621 /* Sources */ = {
+		2E005D70B92E7B7241A31CD79D4045CA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8D495B20CE00DF32B8F1413DC1F8C0A /* IOSUtils.m in Sources */,
-				3043AA75E52689BEB6DC7430D5DF053A /* QueueCache.m in Sources */,
-				AB17B9EB74050B5448817E664C776761 /* QueueITEngine.m in Sources */,
-				E8354B0AF60162C2881A6D7B01E04627 /* QueueITLibrary-dummy.m in Sources */,
-				447836EE84F0CA33B3075869080D664D /* QueueITViewController.m in Sources */,
-				55D047F7A7C0906BAE827C6F3745C75E /* QueueITWKViewController.m in Sources */,
-				0E74902912EFE848CB1F62BC5F436130 /* QueuePassedInfo.m in Sources */,
-				D8E650C3DC039850101FDDA8D1596331 /* QueueService.m in Sources */,
-				09478B67513BB2BCD1C06AFAAAB1A462 /* QueueService_NSURLConnection.m in Sources */,
-				34BB26E3C8DFA054E249526E36BF565B /* QueueService_NSURLConnectionRequest.m in Sources */,
-				F2A62B7D18234CBB99EB07400BAC14EE /* QueueStatus.m in Sources */,
-				DACE06206299BC7A141A8E62C71164EA /* Reachability.m in Sources */,
+				0AADBF4ED28EC236E5622D81B1B42C01 /* Pods-PodApp-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5B35F057EA1381B28B2D69930F76F425 /* Sources */ = {
+		BC34F5BA0745D3AC12F3AB96EEA22CDA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F90658DE935725658D7477564AE421F5 /* Pods-PodApp-dummy.m in Sources */,
+				2568EE40D36EEA60FD4F5F8217787384 /* IOSUtils.m in Sources */,
+				90BD52C8F0D96EA26E7CF8831AF2B0AF /* QueueCache.m in Sources */,
+				3C86C0A4A543BE87218E112AD108BF1D /* QueueITEngine.m in Sources */,
+				D703E4C8FFE4FA96A62884E841154CAB /* QueueITLibrary-dummy.m in Sources */,
+				3DEA12D96730EF436FF576B1C002B682 /* QueueITWKViewController.m in Sources */,
+				258CC7980AB57C5D98F6C94219A3E805 /* QueuePassedInfo.m in Sources */,
+				8504F2099FA453EC7FC69A5B79D3045C /* QueueService.m in Sources */,
+				1C6E8B3E8F62D314C61B9639BD9BB4A7 /* QueueService_NSURLConnection.m in Sources */,
+				C9AA825DC1D372DC60C6BD5E0BCD58EA /* QueueService_NSURLConnectionRequest.m in Sources */,
+				70AAAB3E4111B61558F3E2E344949C92 /* QueueStatus.m in Sources */,
+				D25B383D2CC39925A41087CB79B19496 /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		D2506F1005A40CFE6804D06DD8D6D979 /* PBXTargetDependency */ = {
+		C7B788D94D39FDED755A6B58D6E995CB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = QueueITLibrary;
-			target = BA54221EABB490F4642054127AEEB709 /* QueueITLibrary */;
-			targetProxy = C26E89A4FE31F152CB465C42EE8079B5 /* PBXContainerItemProxy */;
+			target = DBC71AB538C0ACFDE56A1131EA495025 /* QueueITLibrary */;
+			targetProxy = EA698DF4F383B40596D67C418741CF77 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		588E70BFC6E6F54A8DDCEDB9442A48B0 /* Debug */ = {
+		0C090B419893CEA0E88B002D66D60FD5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4A80B0BE34F4B8BB5442D661144D51F1 /* Pods-PodApp.debug.xcconfig */;
+			baseConfigurationReference = C0032D6B539A466AC36290A14A59F90E /* QueueITLibrary.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				GCC_PREFIX_HEADER = "Target Support Files/QueueITLibrary/QueueITLibrary-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = QueueITLibrary;
+				PRODUCT_NAME = QueueITLibrary;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		26D28A54FFC8B0D6BE0B8EE56994525D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D4772031613BD151142A9E37874EA59 /* QueueITLibrary.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/QueueITLibrary/QueueITLibrary-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = QueueITLibrary;
+				PRODUCT_NAME = QueueITLibrary;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2EE22C5ECCDABA26EB77B97DEB94389E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E939D35A14DCC0577F1BA4F4EACACB6E /* Pods-PodApp.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MACH_O_TYPE = staticlib;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -350,10 +394,11 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
-			name = Debug;
+			name = Release;
 		};
-		73ABC2D18F03827B7773405E7F2AD926 /* Debug */ = {
+		3C73BDAC02BF6A4D61D6D97D384D8842 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -385,8 +430,66 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		AB09B621ED251839D4FA17E44F361111 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -406,110 +509,31 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		9B6B989AABD96BB9DECB1784EA5E2534 /* Release */ = {
+		C3C3CA1EB98BD1B35FA8D5C3A5574BAD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		E8EA0BEB6FD002E9FD7E5795712A4D15 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 51442B4F8531F5F11334948771877722 /* QueueITLibrary.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/QueueITLibrary/QueueITLibrary-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = QueueITLibrary;
-				PRODUCT_NAME = QueueITLibrary;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		EEC3CE63E741E5F1A12F0B4D393EAFED /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4AC1AFF4A832E5DCE0E574A9100825FD /* Pods-PodApp.release.xcconfig */;
+			baseConfigurationReference = 85804140EA2C925C89C3E5259E4A48F7 /* Pods-PodApp.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MACH_O_TYPE = staticlib;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -518,64 +542,40 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		F94432587CDB86EA4C2723323AE2126E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 51442B4F8531F5F11334948771877722 /* QueueITLibrary.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/QueueITLibrary/QueueITLibrary-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = QueueITLibrary;
-				PRODUCT_NAME = QueueITLibrary;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				73ABC2D18F03827B7773405E7F2AD926 /* Debug */,
-				9B6B989AABD96BB9DECB1784EA5E2534 /* Release */,
+				AB09B621ED251839D4FA17E44F361111 /* Debug */,
+				3C73BDAC02BF6A4D61D6D97D384D8842 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6A025ACED16A8F8BD9253CA718A42E02 /* Build configuration list for PBXNativeTarget "Pods-PodApp" */ = {
+		73EB793AF5D8EC3E8C83B2250FEB8468 /* Build configuration list for PBXNativeTarget "QueueITLibrary" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				588E70BFC6E6F54A8DDCEDB9442A48B0 /* Debug */,
-				EEC3CE63E741E5F1A12F0B4D393EAFED /* Release */,
+				0C090B419893CEA0E88B002D66D60FD5 /* Debug */,
+				26D28A54FFC8B0D6BE0B8EE56994525D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8D38A450DE9E23C6B0925028AEC077C4 /* Build configuration list for PBXNativeTarget "QueueITLibrary" */ = {
+		9066833785467524C41DC41A3B7B5195 /* Build configuration list for PBXNativeTarget "Pods-PodApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F94432587CDB86EA4C2723323AE2126E /* Debug */,
-				E8EA0BEB6FD002E9FD7E5795712A4D15 /* Release */,
+				C3C3CA1EB98BD1B35FA8D5C3A5574BAD /* Debug */,
+				2EE22C5ECCDABA26EB77B97DEB94389E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 }
