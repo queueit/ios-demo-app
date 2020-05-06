@@ -36,22 +36,26 @@
 -(void)runQueueIt {
     @try
     {
-        [self.engine run];
+        NSError* error = nil;
+        BOOL success = [self.engine run:&error];
+        if (!success) {
+            if ([error code] == NetworkUnavailable) {
+                // Thrown when Queue-It detects no internet connectivity
+                NSLog(@"%ld", (long)[error code]);
+                NSLog(@"Network unavailable was caught in DetailsViewController");
+                NSLog(@"isRequestInProgress - %@", self.engine.isRequestInProgress ? @"YES" : @"NO");
+            }
+            else if ([error code] == RequestAlreadyInProgress) {
+                // Thrown when request to Queue-It has already been made and currently in progress. In general you can ignore this.
+            }
+            else {
+                NSLog(@"Unknown error was returned by QueueITEngine in DetailsViewController");
+            }
+        }
     }
     @catch (NSException *exception)
     {
-        if ([exception reason] == [self.engine errorTypeEnumToString:NetworkUnavailable]) {
-            // Thrown when Queue-It detects no internet connectivity
-            NSLog(@"%@", [exception reason]);
-            NSLog(@"Network unavailable was caught in DetailsViewController");
-            NSLog(@"isRequestInProgress - %@", self.engine.isRequestInProgress ? @"YES" : @"NO");
-        }
-        else if ([exception reason] == [self.engine errorTypeEnumToString:RequestAlreadyInProgress]) {
-            // Thrown when request to Queue-It has already been made and currently in progress. In general you can ignore this.
-        }
-        else {
-            NSLog(@"Other exception was caught in DetailsViewController");
-        }
+        NSLog(@"Exception was caught in DetailsViewController");
     }
     
     //[self testMany]; // Uncomment if you wish to test the in progress error
@@ -61,21 +65,27 @@
     @try
     {
         for (int i = 0; i < 10; i++) {
-            [self.engine run];
+            NSError* error = nil;
+            BOOL success = [self.engine run:&error];
+            if (!success) {
+                if ([error code] == NetworkUnavailable) {
+                    // Thrown when Queue-It detects no internet connectivity
+                    NSLog(@"%ld", (long)[error code]);
+                    NSLog(@"Network unavailable was caught in DetailsViewController");
+                    NSLog(@"isRequestInProgress - %@", self.engine.isRequestInProgress ? @"YES" : @"NO");
+                }
+                else if ([error code] == RequestAlreadyInProgress) {
+                    NSLog(@"Request already in progress was caught in DetailsViewController");
+                }
+                else {
+                    NSLog(@"Unknown error was returned by QueueITEngine in testMany in DetailsViewController");
+                }
+            }
         }
     }
     @catch (NSException *exception)
     {
-        if ([exception reason] == [self.engine errorTypeEnumToString:RequestAlreadyInProgress]) {
-            NSLog(@"Request already in progress was caught in DetailsViewController");
-        } else {
-            NSLog(@"Other exception was caught in TopsTableViewController");
-        }
-        
-        NSLog(@"%@", [exception reason]);
-        NSLog(@"isRequestInProgress - %@", self.engine.isRequestInProgress ? @"YES" : @"NO");
-        [NSThread sleepForTimeInterval:2.0f];
-        [self testMany];
+        NSLog(@"Exception was caught in DetailsViewController");
     }
 }
 

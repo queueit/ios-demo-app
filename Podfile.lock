@@ -1,5 +1,5 @@
 PODS:
-  - QueueITLibrary (2.13.0)
+  - QueueITLibrary (3.0.0)
 
 DEPENDENCIES:
   - QueueITLibrary
@@ -9,8 +9,8 @@ SPEC REPOS:
     - QueueITLibrary
 
 SPEC CHECKSUMS:
-  QueueITLibrary: 7e251f57e08a16135f92a89423a2532bced557cb
+  QueueITLibrary: dbc692dbed01af2117377a99844807ce38d8fafa
 
 PODFILE CHECKSUM: b9ac3507131b152742547c2fb41c038e17b16732
 
-COCOAPODS: 1.9.0
+COCOAPODS: 1.9.1

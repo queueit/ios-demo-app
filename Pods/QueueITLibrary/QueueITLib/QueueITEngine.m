@@ -1,4 +1,3 @@
-#import <UIKit/UIKit.h>
 #import "QueueITEngine.h"
 #import "QueueITWKViewController.h"
 #import "QueueService.h"
@@ -50,7 +49,7 @@ static int INITIAL_WAIT_RETRY_SEC = 1;
     self.delayInterval = delayInterval;
 }
 
--(void)checkConnection
+-(BOOL)checkConnection:(NSError **)error
 {
     int count = 0;
     while (count < 5)
@@ -63,10 +62,11 @@ static int INITIAL_WAIT_RETRY_SEC = 1;
         }
         else
         {
-            return;
+            return YES;
         }
     }
-    @throw [NSException exceptionWithName:@"QueueITRuntimeException" reason:[self errorTypeEnumToString:NetworkUnavailable] userInfo:nil];
+    *error = [NSError errorWithDomain:@"QueueITRuntimeException" code:NetworkUnavailable userInfo:nil];
+    return NO;
 }
 
 -(NSString*) errorTypeEnumToString:(QueueITRuntimeError)errorEnumVal
@@ -83,13 +83,16 @@ static int INITIAL_WAIT_RETRY_SEC = 1;
     return self.requestInProgress;
 }
 
--(void)run
+-(BOOL)run:(NSError **)error
 {
-    [self checkConnection];
+    if(![self checkConnection:error]){
+        return NO;
+    }
     
     if(self.requestInProgress)
     {
-        @throw [NSException exceptionWithName:@"QueueITRuntimeException" reason:[self errorTypeEnumToString:RequestAlreadyInProgress] userInfo:nil];
+        *error = [NSError errorWithDomain:@"QueueITRuntimeException" code:RequestAlreadyInProgress userInfo:nil];
+        return NO;
     }
     
     self.requestInProgress = YES;
@@ -98,6 +101,7 @@ static int INITIAL_WAIT_RETRY_SEC = 1;
         [self tryEnqueue];
     }
     
+    return YES;
 }
 
 -(BOOL)tryShowQueueFromCache
@@ -144,8 +148,15 @@ static int INITIAL_WAIT_RETRY_SEC = 1;
 
 -(void)tryEnqueue
 {
+    [IOSUtils getUserAgent:^(NSString * userAgent) {
+        [self tryEnqueueWithUserAgent:userAgent];
+    }];
+}
+
+-(void)tryEnqueueWithUserAgent:(NSString*)secretAgent
+{
     NSString* userId = [IOSUtils getUserId];
-    NSString* userAgent = [NSString stringWithFormat:@"%@;%@", [IOSUtils getUserAgent], [IOSUtils getLibraryVersion]];
+    NSString* userAgent = [NSString stringWithFormat:@"%@;%@", secretAgent, [IOSUtils getLibraryVersion]];
     NSString* sdkVersion = [IOSUtils getSdkVersion];
     
     QueueService* qs = [QueueService sharedInstance];
